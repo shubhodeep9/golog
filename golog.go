@@ -6,7 +6,8 @@ import (
 )
 
 // NewLogger creates logger instance
-func NewLogger() *logger.Logger {
+func NewLogger(name string) *logger.Logger {
 	lgr := &logger.Logger{}
+	lgr.SetName(name)
 	return lgr
 }
